@@ -34,7 +34,7 @@ void define_codons(codon_prot (&codon_protein)[]) {
   codon_protein[10].codon = "UAC";
   codon_protein[10].protein = "Tyrosine";
   codon_protein[11].codon = "UGU";
-  codon_protein[11].protein = "Cysteine";  
+  codon_protein[11].protein = "Cysteine";
   codon_protein[12].codon = "UGC";
   codon_protein[12].protein = "Cysteine";
   codon_protein[13].codon = "UGG";
@@ -44,11 +44,13 @@ void define_codons(codon_prot (&codon_protein)[]) {
   codon_protein[15].codon = "UAG";
   codon_protein[15].protein = "STOP";
   codon_protein[16].codon = "UGA";
-  codon_protein[16].protein = "STOP"; 
+  codon_protein[16].protein = "STOP";
+
 }
 
 int main () {
-  
+
+  int nsom = 23;
   string codons[] = {
     "AUG","UUU","UUC","UUA","UUG",
     "UCU","UCC","UCA","UCG","UAU",
@@ -57,25 +59,27 @@ int main () {
   string codons_extract[RNA_SIZE] = {};
   codon_prot codon_protein[17];
   string rna = "";
-  
+
   srand(time(NULL));
   define_codons(codon_protein);
 
   for (int i = 0; i < RNA_SIZE; i++) {
     rna = rna + codons[rand() % 17];
+
   }
 
   string cod = "";
   int pos = 0;
-  
+
   for (int i = 0; i < RNA_SIZE; i++) {
     for (int j = 0; j < 3; j++) {
       cod = cod + rna[j+pos];
     }
   }
+
   cout << rna << endl;
   cout << rna[0] << endl;
   cout << rna[4] << endl;
-  
+
   return 0;
 }
