@@ -8,7 +8,7 @@ int main () {
   string clock_point = {"oooooooooooo"};
   int i_hour, i_minute;
   int pos_2p = 0;
-  
+
   cout << "Digite a hora: ";
   cin >> input_hour;
 
@@ -40,14 +40,14 @@ int main () {
   i_minute = stoi(s_minute);
   i_minute = floor(i_minute / 5.0);
 
-  if (i_hour != i_minute) {    
+  if (i_hour != i_minute) {
     clock_point[i_hour] = 'H' ;
     clock_point[i_minute] = 'M' ;
   } else {
     clock_point[i_hour] = 'X' ;
     clock_point[i_minute] = 'X' ;
   }
-  
+
   cout << "        " << clock_point[0] << endl;
   cout << "    " << clock_point[11] << "       " << clock_point[1] << endl;
   cout << " " << clock_point[10] << "             " << clock_point[2] << endl;
@@ -55,7 +55,7 @@ int main () {
   cout << " " << clock_point[8] << "             " << clock_point[4] << endl;
   cout << "    " << clock_point[7] << "       " << clock_point[5] << endl;
   cout << "        " << clock_point[6] << endl;
-  
+
   return 0;
 }
 // mostra um relógio ASCII a partir de um horário (hh:mm) digitado.
