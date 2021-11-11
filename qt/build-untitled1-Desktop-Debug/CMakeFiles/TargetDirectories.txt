@@ -1,3 +1,0 @@
-/home/marcus/Public/cpp/qt/build-untitled1-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/marcus/Public/cpp/qt/build-untitled1-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/marcus/Public/cpp/qt/build-untitled1-Desktop-Debug/CMakeFiles/untitled1.dir
